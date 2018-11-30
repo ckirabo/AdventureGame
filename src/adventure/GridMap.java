@@ -4,27 +4,19 @@ public class GridMap {
 	
 	/////////////Attributes/////////////
 	
-	//start off with fixed grid and then explore infinite columns
+	//layout for compass
 	
-	int [][] gridLayout =  new int[7][7];
+	int [][] gridLayout =  new int[3][3];
 	
 
-	///////////constructors////////////
-	
-	
 	
 	
 	/////////////methods/////////////
 	
-	public int[][] getGridLayout() {
-		return gridLayout;
-	}
-	
-	
 	 public int[][] createMap() {
 			
-			for(int a = 0; a < getGridLayout().length; a++) {
-				for(int b = 0; b < getGridLayout()[a].length; b++) {
+			for(int a = 0; a < gridLayout.length; a++) {
+				for(int b = 0; b < gridLayout[a].length; b++) {
 					 System.out.print("[ ]");
 				}
 				 System.out.println();

@@ -1,20 +1,42 @@
 package adventure;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+	
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your Name : ");
+		String name = sc.nextLine();
+		Player Player1 = new Player(name);	
+		System.out.println("Player Name: " + Player1.getName());
 		
-		Player Player1 = new Player("Snake");	
-		System.out.println(Player1.getName());
+		Scenarios script = new Scenarios();
+	
+		System.out.println(script.startMission());
 		
-		Compass MagicCompas = new Compass();	
-		System.out.println(MagicCompas.showDistance());
+		String command = sc.nextLine();
+		System.out.println(script.prelude(command));
 		
-		// need to fix last line
-		BasicMap swampLevel = new BasicMap();
-		System.out.println(swampLevel.toString());
+		
+		
+		
+		
+		
+	//	Compass MagicCompas = new Compass();	
+	//	System.out.println(MagicCompas.showDistance());
+		
+		
+	//	GridMap compassGrid = new GridMap();
+	//	compassGrid.createMap();
+		
+		
+		
+		
+		
 	}
 
 }

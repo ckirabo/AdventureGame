@@ -15,6 +15,8 @@ public class Navigate {
 	public void moveDirection(String direction) {
 		if(direction.contentEquals("north")) {
 			//move player one step forward
+			
+			//System.out.println();
 		}
 		
 		else if(direction.contentEquals("east")) {
